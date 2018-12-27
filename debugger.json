@@ -1,15 +1,19 @@
 {
     "requestBuilder": {
-      "selected": ["LAUNCH", "GetNewFactIntent", "HelpIntent", "Help + Fact"],
-      "buttons": [
-        {
-          "name": "Help + Fact",
-          "sequence": [
+        "selected": [
+            "LAUNCH",
+            "GetNewFactIntent",
             "HelpIntent",
-            "GetNewFactIntent"
-          ]
-        }
-      ]
+            "Help + Fact"
+        ],
+        "buttons": [
+            {
+                "name": "Help + Fact",
+                "sequence": [
+                    "HelpIntent",
+                    "GetNewFactIntent"
+                ]
+            }
+        ]
     }
-  }
-  
+}
