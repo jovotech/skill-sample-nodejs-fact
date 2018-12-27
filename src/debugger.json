@@ -4,13 +4,19 @@
             "LAUNCH",
             "GetNewFactIntent",
             "HelpIntent",
-            "Help + Fact"
+            "Sequence: Help + Fact"
         ],
         "buttons": [
             {
-                "name": "Help + Fact",
+                "name": "HelpIntent",
                 "sequence": [
-                    "HelpIntent",
+                    "AMAZON.HelpIntent"
+                ]
+            },
+            {
+                "name": "Sequence: Help + Fact",
+                "sequence": [
+                    "AMAZON.HelpIntent",
                     "GetNewFactIntent"
                 ]
             }
